@@ -137,7 +137,7 @@ vTodoForm todo =
     div [ class "form" ]
     [ h1 [] [ text "Add Todo" ] 
     , vInput "text" "title" "form-input" todo.title (ChangeTitle)
-    , vInput "text" "title" "form-input" todo.description (ChangeDesc)
+    , vInput "text" "description" "form-input" todo.description (ChangeDesc)
     , div [] 
         [ button [ onClick CancelTodoForm, class "form-btn" ] [ Icon.viewStyled [ Icon.lg, style "color" "red" ] Icon.ban ]
         , button [ onClick (AddTodo todo.title todo.description), class "form-btn"] [ Icon.viewStyled [ Icon.lg ] Icon.checkCircle ]
